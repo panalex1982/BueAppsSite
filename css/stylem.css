@@ -1,0 +1,35 @@
+/* 
+    Document   : stylem.css
+    Created on : 15 Σεπ 2013, 1:59:30 μμ
+    Author     : panalex
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+@media screen and (max-width: 380px){
+    header>div>div {width:100%; }
+
+    nav {float:left; margin-top:0px;width: inherit;}
+
+
+    ul.menu {margin:25px 10px 0px 0px; display:inline-block;}
+    ul.menu li {float:left; line-height:30px; margin:0px 0px 0px 5%;}
+    ul.menu li a {
+        font-size:.8125em; line-height:1.875em;
+    }
+}
+
+@media screen and (max-width: 1080px){
+    header>div>div {width:100%; }
+
+    nav {float:none; margin-top:0px;width: inherit;}
+
+
+    ul.menu {margin:25px 10px 0px 0px; display:inline;}
+    ul.menu li {float:left; line-height:30px; margin:0px 0px 0px 5%;}
+    ul.menu li a {
+        font-size:1.125em; line-height:1.875em;
+    }
+}
+
+
