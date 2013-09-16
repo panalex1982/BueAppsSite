@@ -8,28 +8,39 @@
 
 @media screen and (max-width: 380px){
     header>div>div {width:100%; }
+    header>div>div>div{width:100%; float:none; text-align: center;}
+    header h1 {width:100%;}
+    header a{text-align: center; width:100%;float:none;}
 
-    nav {float:left; margin-top:0px;width: inherit;}
+    nav {margin-top:0px;width: 100%; float: none;}
 
 
-    ul.menu {margin:25px 10px 0px 0px; display:inline-block;}
+    ul.menu {margin:25px 10px 0px 0px; display:inline-box; }
     ul.menu li {float:left; line-height:30px; margin:0px 0px 0px 5%;}
     ul.menu li a {
-        font-size:.8125em; line-height:1.875em;
+        font-size:.8125em; line-height:30px;
     }
+}
+
+@media screen and (max-width: 768px){
+    header>div>div>div{width:100%; float:none; text-align: center;}
 }
 
 @media screen and (max-width: 1080px){
+    header>div{padding-bottom:5px}
     header>div>div {width:100%; }
+    header>div>div>div{width:100%; float:none;}
 
-    nav {float:none; margin-top:0px;width: inherit;}
+    nav {float:none; margin-top:-30px; width: 100%; line-height:3px;}
 
 
-    ul.menu {margin:25px 10px 0px 0px; display:inline;}
+    ul.menu {margin:25px 10px 0px 0px; display:inline-box;}
     ul.menu li {float:left; line-height:30px; margin:0px 0px 0px 5%;}
     ul.menu li a {
-        font-size:1.125em; line-height:1.875em;
+        font-size:1.125em; line-height:30px;
     }
 }
+
+
 
 
