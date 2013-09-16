@@ -145,14 +145,16 @@ ul.menu li a:hover , ul.menu li.current a { color:#ff9000; }
 .box-8 h2 {margin-bottom:8px;}
 
 /****************************footer************************/
-footer {width:950px; overflow:hidden; margin:0 auto; padding:31px 0px 20px 0; }
-footer p {float:left; text-align:center; width:950px;}
-.soc-icons {overflow:hidden; float:right; margin:8px 73px 0 0;}
-.soc-icons span {display:inline-block; float:left;  color:#000; font-size:20px; line-height:27px; margin-right:17px;}
-.soc-icons a {display:inline-block; float:left; margin-right:19px;}
+footer {width:950px; overflow:hidden; margin:0 auto; padding:31px 0px 20px 0px; }
+foter div{width: 100%;}
+footer p {float:none; text-align:center; width:100%;}
+.soc-icons {overflow:hidden; z-index:1111; float:right; margin:8px 0px 0px 0px;}
+.soc-icons span {display:inline-block; float:left;  color:#000;}
+.soc-icons a {display:inline-block; float:left;}
 .soc-icons a:hover img {opacity:0.7;}
 
 footer nav {display:inline-block; z-index:1111; position:relative; bottom:20px; float:left;}
+
 
 
 footer ul.menu {margin:25px 10px 0px 0px; display:inline-block;}
