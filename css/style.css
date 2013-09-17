@@ -94,14 +94,12 @@ header h1 {display:inline-block; z-index:1111; margin:16px 0px 0 10px; position:
 
 header nav {z-index:1111; position:relative; text-align: center;  margin-top:60px;}
 
-header.nav{
-    
+header .active li a{
+    background:none;
+    color:#ff9000;
 }
 
 
-ul.menu {margin:25px 10px 0px 0px;}
-ul.menu li {float:left; line-height:30px; margin:0px 0px 0px 45px;}
-ul.menu li:hover, ul.menu li.current {}
 ul.menu li a {
     font-size:18px; color:#f2f2f2; font-family: 'Open Sans', sans-serif; text-transform:uppercase;
 }
