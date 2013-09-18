@@ -4,7 +4,7 @@
         <title>Home</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+
         <link rel="stylesheet" type="text/css" media="screen" href="bootstrap/css/bootstrap.css">
         <link rel="stylesheet" type="text/css" media="screen" href="bootstrap/css/bootstrap-theme.css">
         <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
@@ -20,7 +20,7 @@
         <!--[if lt IE 8]>
        <div style=' clear: both; text-align:center; position: relative;'>
          <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+           <img class="img-responsive" src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
         </a>
       </div>
     <![endif]-->
@@ -30,54 +30,92 @@
             <![endif]-->
     </head>
     <body>
-        <header> 
-            <div class="navbar navbar-default navbar-fixed-top"> 
-                <div class="container">  
-                    <div class="navbar-header">                    
-                        <a href="index.html"><img src="images/bue-logo-3.png" alt="" height="120" width="210"></a> <!--<img src="images/logo.png" alt="">-->
+        <header > 
+
+            <div class="navbar navbar-default navbar-fixed-top" role="navigation"> 
+                <div class="container">
+                    <div class="navbar-header">
+
+                        <a class="navbar-brand" href="index.html">
+                            <img class="img-responsive" src="images/bue-logo-3.png" alt="">
+                        </a>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
                     </div>
-                    <nav class="collapse navbar-collapse pull-right ">  
-                        <ul class="nav nav-pills menu">
+
+                    <nav class="collapse navbar-collapse  navbar-ex1-collapse">  
+                        <ul class="nav nav-pills navbar-right menu">
                             <li class="current"><a href="index.html">Home</a></li>
                             <li><a href="extra_mirror.html">Extra Mirror</a></li>
                             <li><a href="shopping_planner.html">Shopping Planner</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
-                    </nav>                    
+                    </nav>  
+
                 </div>
             </div>
         </header>         
         <!--==============================content================================-->
         <section id="content">
-            <div id="slide">
-                <div class="slider">
-                    <ul class="items">
-                        <li><img class="slide_image" src="images/extra_mirror_promote.jpg" alt="" /><div class="banner"><p class="text-1">Extra <strong>Mirror! </strong></p><p class="text-2">Our first application in Google Play!</p><p>GPS application showing the speed, the moving duration and the distance!</p></div></li>
-                        <li><img class="slide_image" src="images/shopping_planner_promote.jpg" alt="" /><div class="banner"><p class="text-1">Shopping <strong>Planner!</strong></p><p class="text-2">Application for planning your expenses!<p>Check where you spend your money and plan your expenses according to your funds!</p></div></li>
-                        <!--<li><img src="images/slider-3.jpg" alt="" /><div class="banner"><p class="text-1">Stay <strong>Creative!</strong></p><p class="text-2">Feugiat nulla facilisis at vero erots et accumsan et iusto odio dignis sim qui blandit.</p></div></li>-->
-                    </ul>
+            <div class="row">
+                <div id="carousel-example-generic" class="carousel slide">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="images/extra_mirror_promote.jpg" alt="">
+                            <div class="carousel-caption">
+                                <h3>Extra <strong>Mirror! </strong></h3>
+                                <p>Our first application in Google Play!</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/shopping_planner_promote.jpg" alt="">
+                            <div class="carousel-caption">
+                                <h3>Shopping <strong>Planner!</strong></h3>
+                                <p class="text-2">Application for planning your expenses!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                        <span class="icon-prev"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                        <span class="icon-next"></span>
+                    </a>
                 </div>
             </div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 box-1">
-                        <img src="images/em_small_logo.png" alt="">
+                        <img class="img-responsive" src="images/em_small_logo.png" alt="" >
                         <div class="extra-wrap">
                             <h2>Extra Mirror</h2>
                             <!--<p>Find Extra Mirror on <a href="https://play.google.com/store/apps/details?id=com.bue.extramirror" class="link" target="_blank" rel="nofollow">Google Play</a>!</p>-->
                             <a href="https://play.google.com/store/apps/details?id=com.bue.extramirror">
-                                <img alt="Get it on Google Play"
+                                <img class="img-responsive" alt="Get it on Google Play"
                                      src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png" />
                             </a>
                         </div>
                     </div>  
                     <div class="col-lg-6 box-1">
-                        <img src="images/sp_small_logo.png" alt="">
+                        <img class="img-responsive" src="images/sp_small_logo.png" alt="">
                         <div class="extra-wrap">
                             <h2>Shopping Planner</h2>
                             <!--<p>Find Shopping planner on <a href="https://play.google.com/store/apps/details?id=com.bue.shoppingplanner.free" class="link" target="_blank" rel="nofollow">Google Play</a>!</p>-->
                             <a href="https://play.google.com/store/apps/details?id=com.bue.shoppingplanner.free">
-                                <img alt="Get it on Google Play"
+                                <img class="img-responsive" alt="Get it on Google Play"
                                      src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png" />
                             </a>
                         </div>
@@ -96,14 +134,14 @@
                         <div class="box-2-2">
                             <div>
                                 <div class="news_photo">
-                                    <img src="http://developer.android.com/images/brand/Google_Play_Store_96.png" alt=""  class="img-border"/>
+                                    <img class="img-responsive" src="http://developer.android.com/images/brand/Google_Play_Store_96.png" alt="" />
                                 </div>
                                 <a href="http://android-developers.blogspot.gr/2013/08/google-play-services-32.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+blogspot/hsDu+(Android+Developers+Blog)" class="link-2">Google Play Services 3.2</a>
                                 <p>The latest release of Google Play services to devices around the world. It offers better performance and greater power savings, as well as enhancements to the Location ... </p>
                             </div>
                             <div class="last">
                                 <div class="news_photo">
-                                    <img src="http://media.bestofmicro.com/1/N/326651/gallery/jelly-bean-android_rc_280x210.png"  alt="" class="img-border"/>
+                                    <img class="img-responsive" src="http://media.bestofmicro.com/1/N/326651/gallery/jelly-bean-android_rc_280x210.png"  alt=""/>
                                 </div>
                                 <a href="http://www.tomshardware.com/news/Android-4.3-Update-Roll-out-Release-Nexus,23671.html" class="link-2">Google Announces Android 4.3, Update Rolling Out Today</a>
                                 <p>Google unveiled the newest version of its Android operating system, Android 4.3. This upgrade isn't major in that Google is still calling it Jelly Bean but there are some changes worth noting.</p>
@@ -124,15 +162,16 @@
                             <ul><li>- Introduced lighter version for Froyo (Android 2.2) and older devices</li></ul>
                         </div>
                     </div> 
+
+                    <div class="clear"></div>
                 </div>
-                <div class="clear"></div>
             </div>
         </section> 
         <!--==============================footer=================================-->
         <footer>    
             <div class="row">
                 <div class="col-lg-1"></div>
-                <nav class="collapse navbar-collapse pull-left">  
+                <nav class="navbar-collapse pull-left">  
                     <ul class="nav  nav-pills">
                         <li class="active"><a href="index.html">Home</a></li>
                         <li><a href="extra_mirror.html">Extra Mirror</a></li>
@@ -141,23 +180,23 @@
                     </ul>
                 </nav>
 
-                <div class="soc-icons col-lg-2 pull-right"><a href="https://twitter.com/bue_apps"><img src="images/icon-1.jpg" alt=""></a>
-                    <a href="https://www.facebook.com/pages/Bueapps/390227304439555"><img src="images/icon-2.jpg" alt=""></a>
-                    <a href="https://plus.google.com/113051637262829148834"><img src="images/icon-3.jpg" alt=""></a>
-                    <a href="https://www.youtube.com/channel/UC3Vjci6yeg4ZGPIMbjrxAbA"><img src="images/icon-4.png" alt=""></a>
+                <div class="soc-icons col-lg-2 pull-right"><a href="https://twitter.com/bue_apps"><img class="img-responsive" src="images/icon-1.jpg" alt=""></a>
+                    <a href="https://www.facebook.com/pages/Bueapps/390227304439555"><img class="img-responsive" src="images/icon-2.jpg" alt=""></a>
+                    <a href="https://plus.google.com/113051637262829148834"><img class="img-responsive" src="images/icon-3.jpg" alt=""></a>
+                    <a href="https://www.youtube.com/channel/UC3Vjci6yeg4ZGPIMbjrxAbA"><img class="img-responsive" src="images/icon-4.png" alt=""></a>
                 </div> 
             </div>
 
             <div class="col-lg-12">
                 <br>
-                <p>Β©2013 Bue Apps</p>
+                <p>©2013 Bue Apps</p>
             </div>            
         </footer>
 
         <!--===========================Scripts===============================-->
         <script src="js/jquery-1.7.min.js"></script>
         <script src="js/jquery.easing.1.3.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="bootstrap/js/bootstrap.js"></script>
         <script src="js/tms-0.4.1.js"></script>
         <script src="js/analytics.js"></script>
         <script>

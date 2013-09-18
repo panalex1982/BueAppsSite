@@ -92,7 +92,10 @@ header>.container {background:url(../images/header-bg-shadow.png) 0 bottom repea
 
 header h1 {display:inline-block; z-index:1111; margin:16px 0px 0 10px; position:relative; float:left;}
 
-header nav {z-index:1111; position:relative; text-align: center;  margin-top:60px;}
+header nav {z-index:1111; text-align: center;  margin-top:60px;}
+@media (max-width: 991px){
+    header nav {z-index:1111; text-align: center;  margin-top:-20px;}
+}
 
 header .active li a{
     background:none;
@@ -155,11 +158,8 @@ footer p {text-align:center;}
 .soc-icons a {display:inline-block; float:left;}
 .soc-icons a:hover img {opacity:0.7;}
 
-footer ul.menu {margin:25px 10px 0px 0px;}
-footer ul.menu li {float:left; margin:0px 0px 0px 20px;}
-footer ul.menu li:hover, ul.menu li.current {}
 footer ul.menu li a {
-    font-size:16px; line-height:20px; color:black; display:inline-block; 
+    font-size:16px; color:black;
     font-family: 'Lato', sans-serif;text-transform:none;
 }
 footer ul.menu li a:hover , ul.menu li.current a { color:#ff9000; }
