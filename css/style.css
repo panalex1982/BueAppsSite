@@ -11,7 +11,7 @@ body {
 	/*min-width:1080px;*/
 	background: #fff;
         line-height: 1.5;
-        padding-top: 119px;
+        
 }
 .ic {border:0;float:right;background:#fff;color:#f00;width:50%;line-height:10px;font-size:10px;margin:-220% 0 0 0;overflow:hidden;padding:0}
 /***********************************************************************/
@@ -87,12 +87,12 @@ ul.list-1 li a:hover {color:#457c00;}
 
 /*********************************header*************************************/
 header{ width:100%; background:url(../images/header-bg.jpg) 0 0 repeat; border-bottom:#fff 1px solid;overflow: hidden}
-.navbar {background:url(../images/header-bg.jpg) 0 0 repeat; border-bottom:#fff 1px solid;}
+.navbar {background:url(../images/header-bg.jpg) 0 0 repeat; border-bottom:#fff 1px solid; margin-bottom:0px}
 header>.container {background:url(../images/header-bg-shadow.png) 0 bottom repeat-x;}
 
 header h1 {display:inline-block; z-index:1111; margin:16px 0px 0 10px; position:relative; float:left;}
 
-header nav {z-index:1111; text-align: center;  margin-top:60px;}
+header nav {z-index:1111; text-align: center;  margin-top:90px;}
 @media (max-width: 991px){
     header nav {z-index:1111; text-align: center;  margin-top:-20px;}
 }
@@ -188,4 +188,11 @@ footer ul.menu li a:hover , ul.menu li.current a { color:#ff9000; }
 .video_menu li:hover{cursor: pointer;}
 .video_menu li.current { color:#ff9000; }
 .video_menu li.last { border:hidden }
+
+/********************************carusel***********************************/
+.carousel-caption{
+    background-color:rgba(73, 73, 74, 0.85);    
+    margin-left: 10%;
+    margin-right: 10%;
+}
 
