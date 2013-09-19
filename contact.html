@@ -8,26 +8,10 @@
         <link rel="stylesheet" type="text/css" media="screen" href="bootstrap/css/bootstrap.css">
         <link rel="stylesheet" type="text/css" media="screen" href="bootstrap/css/bootstrap-theme.css">
         <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
-        <!--<link rel="stylesheet" type="text/css" media="screen" href="css/stylem.css">
-        <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">-->
-        <link rel="stylesheet" type="text/css" media="screen" href="css/slider.css">
         <link href='http://fonts.googleapis.com/css?family=Lato:300italic' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Metrophobic' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Crafty+Girls' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 
-        <!--[if lt IE 8]>
-       <div style=' clear: both; text-align:center; position: relative;'>
-         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
-        </a>
-      </div>
-    <![endif]-->
-        <!--[if lt IE 9]>
-                    <script type="text/javascript" src="js/html5.js"></script>
-            <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
-            <![endif]-->
     </head>
     <body>
         <header> 
@@ -64,23 +48,13 @@
                 </div>
                 <div class="col-lg-4">
                     <h2>Contact Form</h2>
-                    <form id="form" method="post" action="mailto:info.bue.soft@gmail.com">
+                    <form id="form" method="post" action="mailto:info@bueapps.com">
                         <fieldset>
-                            <label><input type="text" value="Name" onBlur="if (this.value == '')
-                                        this.value = 'Name'" onFocus="if (this.value == 'Name')
-                                        this.value = ''"></label>
-                            <label><input type="email" value="Email" onBlur="if (this.value == '')
-                                        this.value = 'Email'" onFocus="if (this.value == 'Email')
-                                        this.value = ''"></label>
-                            <label><input type="text" value="Phone" onBlur="if (this.value == '')
-                                        this.value = 'Phone'" onFocus="if (this.value == 'Phone')
-                                        this.value = ''"></label>
-                            <label><textarea onBlur="if (this.value == '') {
-                                        this.value = 'Message'
-                                    }" onFocus="if (this.value == 'Message') {
-                                        this.value = ''
-                                    }">Message</textarea></label>
-                            <div class="btns"><a href="#" class="button">Clear</a><a href="#" class="button" onClick="document.getElementById('form').submit()">Send</a></div>
+                            <label><input class="clear_text" type="text" name="name"></label>
+                            <label><input class="clear_text" type="email" name="email"></label>
+                            <label><input class="clear_text" type="text" name="phone"></label>
+                            <label><textarea name="message" class="clear_text">Message</textarea></label>
+                            <div class="btns"><a href="#" id="clear_button" class="button">Clear</a><a href="#" class="button" onClick="document.getElementById('form').submit();">Send</a></div>
                         </fieldset>  
                     </form> 
                 </div>
@@ -119,5 +93,31 @@
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <script src="js/tms-0.4.1.js"></script>
         <script src="js/analytics.js"></script>	
+        <script>
+            $(function(){    
+                function clearForm(){
+                    var clearText=$('#form').find('.clear_text');
+                    clearText.each(function(){
+                        $(this).val($(this).attr('name'));
+                    });        
+                }
+                
+                clearForm();
+                
+                $('#clear_button').on('click',function(){
+                    clearForm();
+                });
+                
+                $('.clear_text').focus(function(){
+                    if($(this).val()===$(this).attr('name')){
+                        $(this).val('');
+                    }
+                }).focusout(function(){
+                    if($(this).val()===""){
+                        $(this).val($(this).attr('name'));
+                    }
+                });
+            });
+        </script>
     </body>
 </html>

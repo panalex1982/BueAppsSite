@@ -8,26 +8,9 @@
         <link rel="stylesheet" type="text/css" media="screen" href="bootstrap/css/bootstrap.css">
         <link rel="stylesheet" type="text/css" media="screen" href="bootstrap/css/bootstrap-theme.css">
         <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
-        <!--<link rel="stylesheet" type="text/css" media="screen" href="css/stylem.css">
-        <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">-->
-        <link rel="stylesheet" type="text/css" media="screen" href="css/slider.css">
         <link href='http://fonts.googleapis.com/css?family=Lato:300italic' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Metrophobic' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Crafty+Girls' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-
-        <!--[if lt IE 8]>
-       <div style=' clear: both; text-align:center; position: relative;'>
-         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-           <img class="img-responsive" src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
-        </a>
-      </div>
-    <![endif]-->
-        <!--[if lt IE 9]>
-                    <script type="text/javascript" src="js/html5.js"></script>
-            <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
-            <![endif]-->
     </head>
     <body>
         <header> 
@@ -57,44 +40,46 @@
             </div>
         </header>         
         <!--==============================content================================-->
-        <section id="content">
-            <div class="container">
-                <div class="row">
-                    <div id="carousel-example-generic" class="carousel slide">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                        </ol>
+        <section class="carousel-background">
+            <div class="container">                
+                <div id="carousel-example-generic" class="carousel slide">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    </ol>
 
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <img src="images/extra_mirror_promote.jpg" alt="">
-                                <div class="carousel-caption">
-                                    <h3>Extra <strong>Mirror!</strong></h3>
-                                    <p>Our first application in Google Play!</p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <img src="images/shopping_planner_promote.jpg" alt="">
-                                <div class="carousel-caption">
-                                        <h3>Shopping <strong>Planner!</strong></h3>
-                                        <p>Application for planning your expenses!</p>
-                                </div>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="images/extra_mirror_promote.jpg" alt="">
+                            <div class="carousel-caption">
+                                <h3>Extra <strong>Mirror!</strong></h3>
+                                <p>Our first application in Google Play!</p>
                             </div>
                         </div>
-
-                        <!-- Controls -->
-                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                            <span class="icon-prev"></span>
-                        </a>
-                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                            <span class="icon-next"></span>
-                        </a>
+                        <div class="item">
+                            <img src="images/shopping_planner_promote.jpg" alt="">
+                            <div class="carousel-caption">
+                                <h3>Shopping <strong>Planner!</strong></h3>
+                                <p>Application for planning your expenses!</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                        <span class="icon-prev"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                        <span class="icon-next"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </section>
+        <section id="content">
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-6 box-1">
                         <img class="img-responsive" src="images/em_small_logo.png" alt="" >
@@ -128,21 +113,15 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-8">
-                        <h2 class="top-1">Android News</h2>
+                        <h2 class="top-1">Android Versions</h2>
                         <div class="box-2-2">
                             <div>
-                                <div class="news_photo">
-                                    <img class="img-responsive" src="http://developer.android.com/images/brand/Google_Play_Store_96.png" alt="" />
-                                </div>
-                                <a href="http://android-developers.blogspot.gr/2013/08/google-play-services-32.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+blogspot/hsDu+(Android+Developers+Blog)" class="link-2">Google Play Services 3.2</a>
-                                <p>The latest release of Google Play services to devices around the world. It offers better performance and greater power savings, as well as enhancements to the Location ... </p>
+                                <a href="http://www.android.com/about/jelly-bean/" class="link-2">Last: Android Jelly Bean (4.1)</a>
+                                <img class="img-responsive img-border top-3" src="images/jellybean.png"  alt=""/>
                             </div>
                             <div class="last">
-                                <div class="news_photo">
-                                    <img class="img-responsive" src="http://media.bestofmicro.com/1/N/326651/gallery/jelly-bean-android_rc_280x210.png"  alt=""/>
-                                </div>
-                                <a href="http://www.tomshardware.com/news/Android-4.3-Update-Roll-out-Release-Nexus,23671.html" class="link-2">Google Announces Android 4.3, Update Rolling Out Today</a>
-                                <p>Google unveiled the newest version of its Android operating system, Android 4.3. This upgrade isn't major in that Google is still calling it Jelly Bean but there are some changes worth noting.</p>
+                                <a href="http://www.android.com/kitkat/index.html" class="link-2">Next: Android KitKat (4.4)</a>
+                                <img class="img-responsive img-border top-3" src="images/kitkat.png"  alt=""/>
                             </div>
                         </div>
                     </div>
@@ -166,7 +145,7 @@
             </div>
         </section> 
         <!--==============================footer=================================-->
-        <footer>    
+        <footer>
             <div class="row">
                 <div class="col-lg-1"></div>
                 <nav class="navbar-collapse pull-left">  
