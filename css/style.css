@@ -10,10 +10,20 @@ body {
 	color:#484848;
 	/*min-width:1080px;*/
 	background: #fff;
-        line-height: 1.5;
+        line-height: 1.5;       
         
 }
 .ic {border:0;float:right;background:#fff;color:#f00;width:50%;line-height:10px;font-size:10px;margin:-220% 0 0 0;overflow:hidden;padding:0}
+
+.affix { 
+  position: absolute;
+  top: 627px;
+  right:0;
+}
+.medium_banner{
+    padding-bottom: 5px;
+}
+
 /***********************************************************************/
 a {text-decoration:none; cursor:pointer;text-decoration:none; }
 a:hover {text-decoration:none;}
@@ -93,9 +103,7 @@ header>.container {background:url(../images/header-bg-shadow.png) 0 bottom repea
 header h1 {display:inline-block; z-index:1111; margin:16px 0px 0 10px; position:relative; float:left;}
 
 header nav {z-index:1111; text-align: center;  margin-top:90px;}
-@media (max-width: 991px){
-    header nav {z-index:1111; text-align: center;  margin-top:-20px;}
-}
+
 
 header .active li a{
     background:none;
@@ -113,7 +121,7 @@ ul.menu li a:hover , ul.menu li.current a { color:#ff9000; }
 
 .img-border {border:#fff 8px solid;}
 
-.box-1 {overflow:hidden; padding:40px 0 34px;}
+.box-1 {padding-top: 40px;padding-bottom: 34x;}
 .box-1 img {float:left; margin-top:-3px;}
 .box-1 h2 {margin-bottom:8px;}
 
@@ -155,6 +163,8 @@ footer {width:100%;
         margin:0 auto;
         padding:31px 0px 20px 0px;
         border-top: #428bca 2px solid;
+        -webkit-box-shadow: inset 0px 5px 4px 0px rgba(10, 10, 10, .7);        
+        box-shadow: inset 0px 5px 4px 0px rgba(10, 10, 10, .7);
 }
 /*footer div{width: 100%;}*/
 footer p {text-align:center; color:#428bca;}
@@ -207,5 +217,19 @@ footer ul.menu li a:hover , ul.menu li.current a { color:#ff9000; }
     width:100%;
     padding:0px 0px 0px 0px;
     background-color:#c1c1c1;
+}
+
+/******************Diffrend Media*******************************************/
+@media (max-width: 1790px){
+    .affix {display:none;}
+}
+
+@media (max-width: 991px){
+    header nav {z-index:1111; text-align: center;  margin-top:-20px;}
+    .medium_banner{padding-top:10px;}
+}
+
+@media (min-width: 1199px){
+    .medium_banner{display:none;}
 }
 
